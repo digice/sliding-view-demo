@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlidingViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USK-DK-LV9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vmc-az-e3e" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1136"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="ejw-aI-Of7">
+                                                <rect key="frame" x="25" y="50" width="270" height="490"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Top" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NvM-PQ-AeD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="270" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mid" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BTt-bv-jY6">
+                                                        <rect key="frame" x="0.0" y="230" width="270" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Low" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fi6-y4-MaN">
+                                                        <rect key="frame" x="0.0" y="460" width="270" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.95478490689999995" green="0.96423822280000004" blue="0.96423822280000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ejw-aI-Of7" firstAttribute="top" secondItem="Vmc-az-e3e" secondAttribute="top" constant="50" id="3fa-70-cUY"/>
+                                            <constraint firstAttribute="trailing" secondItem="ejw-aI-Of7" secondAttribute="trailing" constant="25" id="WEs-ts-sWL"/>
+                                            <constraint firstItem="ejw-aI-Of7" firstAttribute="leading" secondItem="Vmc-az-e3e" secondAttribute="leading" constant="25" id="st4-of-sQc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95478490689999995" green="0.96423822280000004" blue="0.96423822280000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Vmc-az-e3e" secondAttribute="trailing" id="MvU-KG-Nf2"/>
+                                    <constraint firstItem="Vmc-az-e3e" firstAttribute="top" secondItem="USK-DK-LV9" secondAttribute="top" id="N41-px-4wn"/>
+                                    <constraint firstItem="Vmc-az-e3e" firstAttribute="leading" secondItem="USK-DK-LV9" secondAttribute="leading" id="gOi-Rl-cG4"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vmc-az-e3e" secondAttribute="bottom" id="h0G-Ek-wSH"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="USK-DK-LV9" secondAttribute="trailing" id="J29-1a-ylB"/>
+                            <constraint firstItem="USK-DK-LV9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Juk-1E-D5i"/>
+                            <constraint firstAttribute="bottom" secondItem="USK-DK-LV9" secondAttribute="bottom" id="XJQ-PM-Jqh"/>
+                            <constraint firstItem="USK-DK-LV9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YJ9-Pc-4Yn"/>
+                            <constraint firstItem="Vmc-az-e3e" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="2" id="deW-v5-5W5"/>
+                            <constraint firstItem="Vmc-az-e3e" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="zuj-zk-2QV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lowField" destination="fi6-y4-MaN" id="XR8-PQ-Shk"/>
+                        <outlet property="midField" destination="BTt-bv-jY6" id="WZY-Wn-tds"/>
+                        <outlet property="scrollView" destination="USK-DK-LV9" id="vE3-5J-rsw"/>
+                        <outlet property="topField" destination="NvM-PQ-AeD" id="1v1-xr-sTe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
